@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1>Calculator</h1>
+</div>
+<form name="frm" class="bl_form">
+    <input type="text" name="resultBox" class="label_better" ><br>
+    <input type="text" name="evoleBox" class="label_better_box" disabled>
+    <div name="buttonBox">
+        <div name="numbers" onclick="addSymbol()">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3"><br>
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6"><br>
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9"><br>
+            <input type="button" value=".">
+            <input type="button" value="0">
+            <input type="button" value="С" onclick = "clearAll()">
+        </div><br>
+        <div name="operations" onclick="doAction()">
+            <input type="button" value="+">
+            <input type="button" value="-">
+            <input type="button" value="*">
+            <input type="button" value="/">
+        </div>
+        <input type="button" name="but=" value="=" onclick="evaler()">
+    </div>
+</form>
+</body>
+</html>
